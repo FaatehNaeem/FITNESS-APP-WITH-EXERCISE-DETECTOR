@@ -31,8 +31,7 @@ const [selectedId, setSelectedId] = useState();
   return (
     <StyledView>
     <Title>Bmi | Calculator</Title>
-    <Subtitle>Let's calculate the best diet plan for you</Subtitle>
-    <StyledInput keyboardType="numeric" placeholder="Enter your age"/>
+    <Subtitle>Let's calculate your body type with Fit Flow</Subtitle>
     <View style={{display:'flex',flexDirection:"row",width:"80%"}}>
     <StyledInput keyboardType="numeric" placeholder="Enter your height cm"/>
     </View>
@@ -44,7 +43,7 @@ const [selectedId, setSelectedId] = useState();
             layout='row'
             containerStyle={{marginTop:10}}
         />
-    <RoundedButton title="Let's GO!"/>
+    <RoundedButton title="Calculate"/>
     </StyledView>
   )
 }
