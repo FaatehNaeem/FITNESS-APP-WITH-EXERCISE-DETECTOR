@@ -26,7 +26,7 @@ const App = () => {
     <stack.Screen name='Signup' component={SignUp}/>
     <stack.Screen name='Login' component={Login}/>
     <stack.Screen name='Lets get you fit' component={BmiCalculator}/>
-    <stack.Screen name='Lets' component={CalorieCalculator}/>
+    <stack.Screen name='Calorie Calculator' component={CalorieCalculator}/>
     
     </stack.Navigator>
     </NavigationContainer>

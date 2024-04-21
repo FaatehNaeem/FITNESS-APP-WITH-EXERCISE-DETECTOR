@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-import { StyleSheet,Text } from 'react-native';
+import { StyleSheet, Text } from 'react-native';
 import { Dropdown } from 'react-native-element-dropdown';
-import AntDesign from '@expo/vector-icons/AntDesign';
+// import AntDesign from '@expo/vector-icons/AntDesign';
 
 const data = [
-  { label: 'Item 1', value: '1' },
-  { label: 'Item 2', value: '2' },
-  { label: 'Item 3', value: '3' },
-  { label: 'Item 4', value: '4' },
+  { label: 'Not Active', value: '1' },
+  { label: 'Lightly Active', value: '2' },
+  { label: 'Moderately Active', value: '3' },
+  { label: 'Very Active', value: '4' },
+  { label: 'Extremely Active', value: '4' },
+
 ];
 
 const DropdownComponent = () => {
@@ -18,22 +20,22 @@ const DropdownComponent = () => {
       style={styles.dropdown}
       placeholderStyle={styles.placeholderStyle}
       selectedTextStyle={styles.selectedTextStyle}
-      // inputSearchStyle={styles.inputSearchStyle}
-      iconStyle={styles.iconStyle}
+      itemTextStyle={styles.itemsStyle}
+      itemContainerStyle={styles.itemContainerStyle}
+      // activeColor={styles.activeItemStyle}
+      mode='modal'
       data={data}
-      // search
-      maxHeight={300}
       labelField="label"
       valueField="value"
-      placeholder="Select item"
-      searchPlaceholder="Search..."
+      placeholder={value ? value : 'Select Item'}
       value={value}
       onChange={item => {
-        setValue(item.value);
+        setValue(item.label);
       }}
-      renderLeftIcon={() => (
-      <Text style={{color:'white', fontSize:20}}> Activity Level</Text>
-      )}
+      // renderLeftIcon={() => (
+      //   <Text style={styles.selectedTextStyle}>{value}</Text>
+      // )}
+
     />
   );
 };
@@ -42,26 +44,32 @@ export default DropdownComponent;
 
 const styles = StyleSheet.create({
   dropdown: {
-    margin: 16,
+    marginTop: 15,
     height: 50,
-    borderBottomColor: 'gray',
+    width: 300,
+    borderBottomColor: '#00ADB5',
     borderBottomWidth: 0.5,
   },
-  icon: {
-    marginRight: 5,
-  },
+
   placeholderStyle: {
-    fontSize: 16,
+    fontSize: 20,
+    color: '#00ADB5',
   },
+
   selectedTextStyle: {
+    fontSize: 20,
+    color:'#00ADB5',
+  },
+
+  itemContainerStyle: {
+    backgroundColor: '#00ADB5',
+  },
+
+  itemsStyle: {
     fontSize: 16,
+    color: 'white',
   },
-  iconStyle: {
-    width: 20,
-    height: 20,
-  },
-  inputSearchStyle: {
-    height: 40,
-    fontSize: 16,
-  },
+  activeItemStyle: {
+    backgroundColor: 'blue'
+  }
 });
