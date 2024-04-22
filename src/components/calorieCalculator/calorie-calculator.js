@@ -17,7 +17,5 @@ function CalorieCalculator() {
     )
 }
 
-{/* <StyledInput keyboardType="numeric" placeholder="Enter your activity level" />
-<StyledInput keyboardType="numeric" placeholder="Enter your weight goal" /> */}
 
 export default CalorieCalculator
