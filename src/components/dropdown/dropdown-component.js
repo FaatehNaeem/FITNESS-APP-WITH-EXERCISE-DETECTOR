@@ -1,40 +1,52 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text } from 'react-native';
 import { Dropdown } from 'react-native-element-dropdown';
-// import AntDesign from '@expo/vector-icons/AntDesign';
+import { DropDownPropTypes, DropDownDefaultProps } from './props';
+// import PropTypes from 'prop-types'
+// const data = [
+//   { label: 'Not Active', value: '1' },
+//   { label: 'Lightly Active', value: '2' },
+//   { label: 'Moderately Active', value: '3' },
+//   { label: 'Very Active', value: '4' },
+//   { label: 'Extremely Active', value: '5' },
 
-const data = [
-  { label: 'Not Active', value: '1' },
-  { label: 'Lightly Active', value: '2' },
-  { label: 'Moderately Active', value: '3' },
-  { label: 'Very Active', value: '4' },
-  { label: 'Extremely Active', value: '4' },
+// ];
 
-];
+const DropdownComponent = ({
+  data = [
+    { label: 'Not Active', value: '1' },
+    { label: 'Lightly Active', value: '2' },
+    { label: 'Moderately Active', value: '3' },
+    { label: 'Very Active', value: '4' },
+    { label: 'Extremely Active', value: '5' },
 
-const DropdownComponent = () => {
+  ],
+  placeholderValue = 'Enter Activity Level'
+}
+) => {
   const [value, setValue] = useState(null);
+  const [isFocus, setIsFocus] = useState(false);
 
   return (
     <Dropdown
-      style={styles.dropdown}
+      style={[styles.dropdown, isFocus && { borderColor: '#00ADB5' }]}
       placeholderStyle={styles.placeholderStyle}
       selectedTextStyle={styles.selectedTextStyle}
       itemTextStyle={styles.itemsStyle}
-      itemContainerStyle={styles.itemContainerStyle}
-      // activeColor={styles.activeItemStyle}
-      mode='modal'
+      // itemContainerStyle={styles.itemContainerStyle}
+      // mode='modal'
       data={data}
       labelField="label"
       valueField="value"
-      placeholder={value ? value : 'Select Item'}
+      placeholder={value ? value : placeholderValue}
       value={value}
+      onFocus={() => setIsFocus(true)}
       onChange={item => {
         setValue(item.label);
       }}
-      // renderLeftIcon={() => (
-      //   <Text style={styles.selectedTextStyle}>{value}</Text>
-      // )}
+    // renderLeftIcon={() => (
+    //   <Text style={styles.selectedTextStyle}>{value}</Text>
+    // )}
 
     />
   );
@@ -42,12 +54,16 @@ const DropdownComponent = () => {
 
 export default DropdownComponent;
 
+DropdownComponent.proptypes = DropDownPropTypes
+DropdownComponent.proptypes = DropDownDefaultProps
+
+
 const styles = StyleSheet.create({
   dropdown: {
-    marginTop: 15,
+    marginVertical: 15,
     height: 50,
     width: 300,
-    borderBottomColor: '#00ADB5',
+    borderBottomColor: 'white',
     borderBottomWidth: 0.5,
   },
 
@@ -58,18 +74,16 @@ const styles = StyleSheet.create({
 
   selectedTextStyle: {
     fontSize: 20,
-    color:'#00ADB5',
+    color: '#00ADB5',
   },
 
-  itemContainerStyle: {
-    backgroundColor: '#00ADB5',
-  },
+  // itemContainerStyle: {
+  //   backgroundColor: '#00ADB5',
+  // },
 
   itemsStyle: {
     fontSize: 16,
-    color: 'white',
+    color: 'black',
   },
-  activeItemStyle: {
-    backgroundColor: 'blue'
-  }
+
 });
