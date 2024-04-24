@@ -5,6 +5,7 @@ export const Container = styled.View`
 width:100%;
 backgroundColor : #1F2544;
 flex:1;
+alignItems:center;
 `
 
 
