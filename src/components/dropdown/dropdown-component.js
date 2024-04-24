@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { Dropdown } from 'react-native-element-dropdown';
 import { DropDownPropTypes, DropDownDefaultProps } from './props';
 // import PropTypes from 'prop-types'

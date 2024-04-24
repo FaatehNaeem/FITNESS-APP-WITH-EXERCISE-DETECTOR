@@ -6,6 +6,7 @@ import { RoundedButton } from "./button"
 import { StyledInput } from "./input"
 import { Title } from "./text"
 import { Subtitle } from "./text"
+import { Container } from "./container"
 
 
 
@@ -18,6 +19,7 @@ StyledSubtitle,
 StyledInput,
 Title,
 Subtitle,
+Container,
 RoundedButton,
 }
 

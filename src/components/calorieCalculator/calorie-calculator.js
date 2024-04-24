@@ -3,7 +3,7 @@ import { RoundedButton, Subtitle, Title, StyledView } from '../../../styles'
 import Radio from '../radioGroup/radio-group'
 import DropDownComponent from '../dropdown/dropdown-component'
 
-function CalorieCalculator() {
+function CalorieCalculator({navigation}) {
 
     return (
         <StyledView>
@@ -20,7 +20,7 @@ function CalorieCalculator() {
                 ]} placeholderValue='Enter Weight Goal' />
 
             <Radio />
-            <RoundedButton title="Calculate" />
+            <RoundedButton title="Calculate" onPress={()=>navigation.navigate('FIT FLOW')}/>
         </StyledView>
     )
 }
