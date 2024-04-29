@@ -1,11 +1,11 @@
 import React from 'react'
-import { Container } from '../../../styles/index'
+import { Container, StyledTitle } from '../../../styles/index'
 
 function HomePage() {
-  return (
-    <>
-    <Container/>
-    </>
+  return ( 
+    <Container>
+<StyledTitle>Fitflow</StyledTitle>
+    </Container>                                  
   )
 }
 
