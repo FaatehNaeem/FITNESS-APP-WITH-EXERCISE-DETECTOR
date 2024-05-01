@@ -7,7 +7,8 @@ backgroundColor : #393E46;
 alignItems:center;
 justifyContent: center; 
 marginTop:10px;
-width:350px
+width:300px;
+borderRadius: 20px;
 
 `
 
