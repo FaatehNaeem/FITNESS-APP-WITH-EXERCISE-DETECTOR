@@ -7,7 +7,7 @@ function HomePage() {
   return (
 
     <View style={styles.viewstyle}>
-      <Title>Fit Flow</Title>
+      <Title style={{margin:50}}>Fit Flow</Title>
       <Container>
         <Title>Calories</Title>
       </Container>
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     width: "100%",
     flex: 1,
     alignItems: "center",
-    backgroundColor: "#1F2544"
+    backgroundColor: "#1F2544",
   }
 })
 
