@@ -7,7 +7,7 @@ background-color: #00ADB5;
 border-radius : 50px;  
 justifyContent:${props=>props.justifyContent || 'center'};
 align-items:center;
-marginTop:15px
+marginTop:15px;
 `
 export const ButtonText = styled.Text`
 font-size: 20px;

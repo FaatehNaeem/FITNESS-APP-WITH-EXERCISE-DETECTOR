@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { RoundedButton, Title } from '../../../styles'
 import { View, Text } from 'react-native'
 import { MainContainer, StyledView } from '../../../styles/wrapper'
-// import styled from 'styled-components/native'
 import { StyleSheet } from 'react-native'
 
 function HomePage() {
@@ -24,8 +23,8 @@ function HomePage() {
         alignItems={'start'}
       />
 
-<View style={styles.view}>
-      <RoundedButton title={'Edit'} width={'100px'}></RoundedButton>
+      <View style={styles.view}>
+        <RoundedButton title={'Edit'} width={'100px'}></RoundedButton>
       </View>
 
       <MainContainer
@@ -46,8 +45,8 @@ function HomePage() {
 
 const styles = StyleSheet.create({
   view: {
-    width: "100%",
-    alignItems: "left",
+    width: "80%",
+    alignItems: "flex-end",
     backgroundColor: "#1F2544",
   }
 })
