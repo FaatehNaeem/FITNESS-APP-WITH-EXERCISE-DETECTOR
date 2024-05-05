@@ -10,9 +10,6 @@ import Form from './src/components/form/form'
 import Steps from './src/components/steps/steps'
 import Diary from './src/components/diary/diary'
 
-
-
-
 import { NavigationContainer } from '@react-navigation/native';
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -23,65 +20,65 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 const stack = createNativeStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
 
-function Home(){
-  return(
-  <Tab.Navigator
-  activeColor='#00ADB5'
-  inactiveColor='white'
-  barStyle={{ backgroundColor: '#393E46' }}
->
+function Home() {
+  return (
+    <Tab.Navigator
+      activeColor='#00ADB5'
+      inactiveColor='white'
+      barStyle={{ backgroundColor: '#393E46' }}
+    >
 
-  <Tab.Screen name="HomePage" component={HomePage}
-    options={{
-      tabBarLabel: 'Dashboard',
-      tabBarIcon: ({ color }) => (
-        <MaterialCommunityIcons name="view-dashboard" color={color} size={26} />
-      ),
-      tabBarColor: 'red'
-    }} />
+      <Tab.Screen name="HomePage" component={HomePage}
+        options={{
+          tabBarLabel: 'Dashboard',
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="view-dashboard" color={color} size={26} />
+          ),
+          tabBarColor: 'red'
+        }} />
 
-  <Tab.Screen name="BmiCalculator" component={BmiCalculator}
-    options={{
-      tabBarLabel: 'BMI',
-      tabBarIcon: ({ color }) => (
-        <MaterialCommunityIcons name="human-male" color={color} size={26} />
-      ),
-      tabBarColor: 'blue'
-    }}
-  />
+      <Tab.Screen name="BmiCalculator" component={BmiCalculator}
+        options={{
+          tabBarLabel: 'BMI',
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="human-male" color={color} size={26} />
+          ),
+          tabBarColor: 'blue'
+        }}
+      />
 
-<Tab.Screen name="Form" component={Form}
-    options={{
-      tabBarLabel: 'Form',
-      tabBarIcon: ({ color }) => (
-        <MaterialCommunityIcons name="dumbbell" color={color} size={26} />
-      ),
-      tabBarColor: 'blue'
-    }}
-  />
+      <Tab.Screen name="Form" component={Form}
+        options={{
+          tabBarLabel: 'Form',
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="dumbbell" color={color} size={26} />
+          ),
+          tabBarColor: 'blue'
+        }}
+      />
 
-  <Tab.Screen name="Steps" component={Steps}
-    options={{
-      tabBarLabel: 'Steps',
-      tabBarIcon: ({ color }) => (
-        <MaterialCommunityIcons name="run" color={color} size={26} />
-      ),
-      tabBarColor: 'green'
-    }}
-  />
+      <Tab.Screen name="Steps" component={Steps}
+        options={{
+          tabBarLabel: 'Steps',
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="run" color={color} size={26} />
+          ),
+          tabBarColor: 'green'
+        }}
+      />
 
-  <Tab.Screen name="Diary" component={Diary}
-    options={{
-      tabBarLabel: 'Diary',
-      tabBarIcon: ({ color }) => (
-        <MaterialCommunityIcons name="book-open-outline" color={color} size={26} />
-      ),
-      tabBarColor: 'yellow'
-    }}
-  />
+      <Tab.Screen name="Diary" component={Diary}
+        options={{
+          tabBarLabel: 'Diary',
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="book-open-outline" color={color} size={26} />
+          ),
+          tabBarColor: 'yellow'
+        }}
+      />
 
 
-</Tab.Navigator>
+    </Tab.Navigator>
   )
 }
 
@@ -106,7 +103,7 @@ const App = () => {
         <stack.Screen name='Login' component={Login} />
         <stack.Screen name='Lets get you fit' component={BmiCalculator} />
         <stack.Screen name='Calorie Calculator' component={CalorieCalculator} />
-        <stack.Screen name='FIT FLOW' component={Home} options={{headerShown:false}} />
+        <stack.Screen name='FIT FLOW' component={Home} options={{ headerShown: false }} />
       </stack.Navigator>
     </NavigationContainer>
 
