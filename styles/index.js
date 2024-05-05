@@ -8,19 +8,16 @@ import { Title } from "./text"
 import { Subtitle } from "./text"
 import { Container } from "./container"
 
-
-
-
 export {
-StyledView,
-StyledImageBackground,
-StyledTitle,
-StyledSubtitle,
-StyledInput,
-Title,
-Subtitle,
-Container,
-RoundedButton,
+    StyledView,
+    StyledImageBackground,
+    StyledSubtitle,
+    StyledInput,
+    Title,
+    Subtitle,
+    Container,
+    RoundedButton,
+    StyledTitle,
 }
 
 
