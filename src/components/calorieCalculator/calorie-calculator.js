@@ -1,5 +1,5 @@
 import { StyledInput } from '../../../styles/input'
-import { RoundedButton, Subtitle, Title, StyledView } from '../../../styles'
+import { RoundedButton, StyledTitle, StyledView } from '../../../styles'
 import Radio from '../radioGroup/radio-group'
 import DropDownComponent from '../dropdown/dropdown-component'
 
@@ -7,8 +7,8 @@ function CalorieCalculator({ navigation }) {
 
     return (
         <StyledView>
-            <Title>Calorie Calculator</Title>
-            <Subtitle>Let's calculate the best calorie intake for you</Subtitle>
+            <StyledTitle title="Calorie Calculator"></StyledTitle>
+            <StyledTitle fontSize={"16px"} title="Let's calculate the best calorie intake for you"></StyledTitle>
             <StyledInput keyboardType="numeric" placeholder="Enter your age" />
             <DropDownComponent />
             <DropDownComponent

@@ -1,7 +1,7 @@
 import React from 'react'
-import { RoundedButton, Title } from '../../../styles'
-import { View, Text } from 'react-native'
-import { MainContainer, StyledView } from '../../../styles/wrapper'
+import { RoundedButton, StyledTitle, Title } from '../../../styles'
+import { View,Text } from 'react-native'
+import { ClickableViews, MainContainer, StyledView } from '../../../styles/wrapper'
 import { StyleSheet } from 'react-native'
 
 function HomePage() {
@@ -18,30 +18,92 @@ function HomePage() {
         backgroundColor={'#393E46'}
         borderRadius={'20px'}
         marginTop={'10px'}
-        flex={'0.3'}
+        flex={'0.4'}
         justifyContent={'start'}
         alignItems={'start'}
+        flexDirection={'row'}
       />
 
       <View style={styles.view}>
         <RoundedButton title={'Edit'} width={'100px'}></RoundedButton>
       </View>
 
-      <MainContainer
-        width={'300px'}
-        title='FAATEH'
-        backgroundColor={'#393E46'}
-        borderRadius={'20px'}
-        marginTop={'10px'}
-        flex={'0.3'}
-        justifyContent={'start'}
-        alignItems={'start'}
-      />
+
+    <StyledTitle title="DISCOVER" top={"15px"}/>
+
+    <ClickableViews
+            width={'350px'}
+            height={'200px'}
+            backgroundColor={"null"}
+            borderRadius={'20px'}
+            marginTop={'50px'}
+            flex={'0.4'}
+            justifyContent={'start'}
+            alignItems={'start'}
+            flexDirection={'row'}
+            />
+{/* <View style={{flexDirection:"row",backgroundColor:"blue",padding:12,marginTop:15,flex:0.5}}>
+<View style={{backgroundColor:"red",flexDirection:"column",backgroundColor:"blue",padding:12,flex:0.5}}>
+<ClickableViews
+ width={'150px'}
+ height={'100px'}
+ title="faateh"
+ backgroundColor={'#393E46'}
+ borderRadius={'20px'}
+ marginTop={'1px'}
+ flex={'0.25'}
+ justifyContent={'center'}
+ alignItems={'center'}
+ flexDirection={'row'}
+/>
+
+<ClickableViews
+ width={'150px'}
+ height={'50px'}
+ title="faateh"
+ backgroundColor={'#393E46'}
+ borderRadius={'20px'}
+ marginTop={'100px'}
+ flex={'1'}
+ justifyContent={'center'}
+ alignItems={'center'}
+ flexDirection={'row'}
+/>
+</View>
+
+<View style={{flexDirection:"column",backgroundColor:"blue",padding:12,marginTop:15,flex:0.5}}>
+
+<ClickableViews
+ width={'150px'}
+ height={'50px'}
+ title="faateh"
+ backgroundColor={'#393E46'}
+ borderRadius={'20px'}
+ marginTop={'100px'}
+ flex={'1'}
+ justifyContent={'center'}
+ alignItems={'center'}
+ flexDirection={'row'}
+/>
+<ClickableViews
+ width={'150px'}
+ height={'50px'}
+ title="faateh"
+ backgroundColor={'#393E46'}
+ borderRadius={'20px'}
+ marginTop={'100px'}
+ flex={'4'}
+ justifyContent={'center'}
+ alignItems={'center'}
+ flexDirection={'row'}
+/>
+</View>
+</View> */}
 
     </StyledView>
 
   )
-}
+} 
 
 const styles = StyleSheet.create({
   view: {
