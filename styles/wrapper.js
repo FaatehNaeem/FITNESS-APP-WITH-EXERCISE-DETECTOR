@@ -1,6 +1,7 @@
 import styled from "styled-components/native";
 import { StyledTitle } from "./text";
 import { View, Text } from "react-native";
+import Icon from 'react-native-vector-icons/FontAwesome5';
 
 export const StyledView = styled.View`
 width:${props => props.width || '100%'};
@@ -17,13 +18,14 @@ export const MainContainer = ({ width, flex, backgroundColor, title, borderRadiu
     <StyledView backgroundColor={backgroundColor} width={width} radius={borderRadius.toString()} flux={flex.toString()} justifyContent={justifyContent} marginTop={marginTop} alignItems={alignItems} flexDirection={flexDirection}>
 
         <View style={{ width: '50%', height: '100%', justifyContent: "center", alignItems: "center" }}>
-            <StyledTitle fontSize={'20px'} position={"relative"} top={"0px"} title={title}></StyledTitle>
+            <StyledTitle fontSize={'25px'} position={"relative"} top={"0px"} title={title}></StyledTitle>
             <View style={{
-                backgroundColor: 'black', width: '60%', height: '67%',
-                marginTop: '5%', borderTopLeftRadius: 50, borderTopRightRadius: 50, borderBottomLeftRadius: 50, borderBottomRightRadius: 50, alignItems: 'center', justifyContent: 'center', flexDirection: "column"
+                backgroundColor: '#0F0F0F', width: '70%', height: '60%', borderColor: 'aqua', borderWidth: 2,
+                marginTop: '2%', borderRadius: 60, alignItems: 'center', justifyContent: 'center', flexDirection: "column",
+                padding: 12
             }}>
 
-                <Text style={{ textAlign: 'center', color: '#00ADB5', fontSize: 16 }}>3,234 Remaining</Text>
+                <Text style={{ textAlign: 'center', color: 'white', fontSize: 16 }}>3,234 Remaining</Text>
             </View>
         </View>
 
@@ -56,45 +58,39 @@ export const MainContainer = ({ width, flex, backgroundColor, title, borderRadiu
     </StyledView>
 
 
-export const ClickableViews = ({ title, width, height, backgroundColor, flex, justifyContent, alignItems, flexDirection, borderRadius, marginTop }) =>
-    <StyledView width={width} height={height} marginTop={marginTop} backgroundColor={backgroundColor} flux={flex.toString()} radius={borderRadius.toString()} justifyContent={justifyContent} alignItems={alignItems} flexDirection={flexDirection}>
+export const DiscoverSection = ({ title }) =>
+    <>
+        <StyledTitle title={'Discover'}></StyledTitle>
+        <View style={{ width: '100%', height: '20%', alignItems: 'center', justifyContent: 'center', flexDirection: "row", flex: 0.5 }}>
 
-        <StyledTitle title={title}></StyledTitle>
+            <View style={{ flexDirection: "column", alignItems: 'center', justifyContent: 'center', flex: 0.3, gap: 5, marginTop: 2 }}>
 
-        <View style={{width: "40%", flexDirection: 'column', justifyContent: "center", alignItems: "center",marginLeft:20 }}>
-            <View style={{
-                backgroundColor: '#393E46', width: '80%', height: '70%', borderTopLeftRadius: 10, borderTopRightRadius: 10, borderBottomLeftRadius: 10, borderBottomRightRadius: 10, alignItems: 'center', justifyContent: 'center'
-            }}>
+                <View style={{ backgroundColor: '#393E46', width: '100%', height: '50%', borderRadius: 10, justifyContent: 'center', alignItems: "center" }}>
+                    <Icon name="utensils" size={30} color="aqua" />
+                    <StyledTitle fontSize={"20px"} title={"Food"}></StyledTitle>
+
+                </View>
+                <View style={{ backgroundColor: '#393E46', width: '100%', height: '50%', borderRadius: 10, justifyContent: 'center', alignItems: "center" }}>
+                    <Icon name="dumbbell" size={30} color="aqua" style="solid" />
+                    <StyledTitle fontSize={"20px"} title={"Exercises"}></StyledTitle>
+                </View>
             </View>
 
             <View style={{
-                backgroundColor: '#393E46', width: '80%', height: '70%', borderTopLeftRadius: 10, borderTopRightRadius: 10, borderBottomLeftRadius: 10, borderBottomRightRadius: 10, alignItems: 'center', justifyContent: 'center',marginTop:5
-            }}>
-            </View>
-        </View>
+                backgroundColor: 'aqua', flex: 0.1, height: "15%", borderRadius: 150, alignItems: 'center', justifyContent: 'center', flexDirection: "column"
+            }} />
 
+            <View style={{ flexDirection: "column", alignItems: 'center', justifyContent: 'center', flex: 0.3, gap: 5, marginTop: 2 }}>
 
-        <View style={{ height: "100%", width: "10%", justifyContent: 'center', alignItems: 'center' }}>
-            <View style={{
-                backgroundColor: 'aqua', width: '100%', height: '30%',
-                marginTop: '5%', borderTopLeftRadius: 100, borderTopRightRadius: 100, borderBottomLeftRadius: 100, borderBottomRightRadius: 100, alignItems: 'center', justifyContent: 'center', flexDirection: "row"
-            }}></View>
-        </View>
-
-
-        <View style={{ width: "40%", flexDirection: 'column', justifyContent: "center", alignItems: "center" }}>
-            <View style={{
-                backgroundColor: '#393E46', width: '80%', height: '70%', borderTopLeftRadius: 10, borderTopRightRadius: 10, borderBottomLeftRadius: 10, borderBottomRightRadius: 10, alignItems: 'center', justifyContent: 'center'
-            }}>
-            </View>
-
-            <View style={{
-                backgroundColor: '#393E46', width: '80%', height: '70%', borderTopLeftRadius: 10, borderTopRightRadius: 10, borderBottomLeftRadius: 10, borderBottomRightRadius: 10, alignItems: 'center', justifyContent: 'center', marginTop: 5
-            }}>
+                <View style={{ backgroundColor: '#393E46', width: '100%', height: '50%', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
+                    <Icon name="running" size={30} color="aqua" />
+                    <StyledTitle fontSize={"20px"} title={"Steps"}></StyledTitle>
+                </View>
+                <View style={{ backgroundColor: '#393E46', width: '100%', height: '50%', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
+                    <Icon name="discord" size={30} color="aqua" style="" />
+                    <StyledTitle fontSize={"20px"} title={"Community"}></StyledTitle>
+                </View>
             </View>
 
         </View>
-
-
-
-    </StyledView>
+    </>
