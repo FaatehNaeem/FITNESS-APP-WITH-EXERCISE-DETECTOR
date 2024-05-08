@@ -20,6 +20,10 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 const stack = createNativeStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
 
+import {conf} from "./config"
+
+  console.warn(conf.api_Url, conf.api_key)
+
 function Home() {
   return (
     <Tab.Navigator
