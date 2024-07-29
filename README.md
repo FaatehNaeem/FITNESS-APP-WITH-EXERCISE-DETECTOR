@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-<img src="https://iili.io/dTOfsa9.png" alt="dTOfsa9.th.png" border="0">
+  ![image](https://github.com/user-attachments/assets/f112ec4f-83ce-4e26-991e-81551842e07c)
   <br />
 
   <div>
