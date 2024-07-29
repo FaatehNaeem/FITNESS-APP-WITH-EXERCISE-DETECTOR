@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-  ![image](https://github.com/user-attachments/assets/f112ec4f-83ce-4e26-991e-81551842e07c)
+  <img src="https://github.com/user-attachments/assets/f112ec4f-83ce-4e26-991e-81551842e07c" alt="FitFlow" border="0">
   <br />
 
   <div>
