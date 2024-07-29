@@ -167,38 +167,71 @@ npx expo start
 
 ## <a name="start-App">🤟 Start App</a>
 
-** Do these changes to enjoy all features of the app: **
+**Do these changes to enjoy all features of the app:**
 
-** 1) Enter your posetracker Api key in all the exercise files in the Form Folder **
-** 2) Enter your spoonacular Api key in the DietPlan file in the App Folder **
-** 3) Enter all your Id's related to project in the Appwrite.js file in the lib Folder **
-** 3) To achieve all this you can refer to the links sections and visit the mentioned links **
+1. **Enter your Posetracker API key in all the exercise files in the Form Folder.**
+2. **Enter your Spoonacular API key in the DietPlan file in the App Folder.**
+3. **Enter all your IDs related to the project in the Appwrite.js file in the lib Folder.**
+4. **To achieve all this, you can refer to the links section and visit the mentioned links.**
 
-** Note : **
+**Note:**
 
-Appwrite is just like Firebase so in order to get all the Id's in appwrite.js file you need to setup the database, collections etc.
+Appwrite is just like Firebase, so to get all the IDs for the appwrite.js file, you need to set up the database, collections, etc.
 
-** Your collection and attribute structures must be like this : **
+**Your collection and attribute structures must be like this:**
 
-** 1) Collection name: users **
+1. **Collection name: users**
 
-Attributes: username(set data type as string), email(Email), accountId(string), avatar(Url)
+    Attributes: 
+    - `username` (set data type as string)
+    - `email` (Email)
+    - `accountId` (string)
+    - `avatar` (Url)
 
-** 2) Collection name: BMI **
+2. **Collection name: BMI**
 
-Attributes: weight(Integer -> min val = 0 , max val = 1000), height(Integer -> min val = 0, max val = 255), bmi(string), userId(Relationship with UserId, one to one, cascade)
+    Attributes: 
+    - `weight` (Integer -> min val = 0, max val = 1000)
+    - `height` (Integer -> min val = 0, max val = 255)
+    - `bmi` (string)
+    - `userId` (Relationship with UserId, one to one, cascade)
 
-** 3) Collection name: userCalories **
+3. **Collection name: userCalories**
 
-Attributes: age(Integer), ActivityLevel(string), WeightGoal(string), Gender(string), MaintainenceCalories(Integer), Calories(Integer), Bmr(Integer), bmiId(Relationship with BMI collection)
+    Attributes: 
+    - `age` (Integer)
+    - `ActivityLevel` (string)
+    - `WeightGoal` (string)
+    - `Gender` (string)
+    - `MaintainenceCalories` (Integer)
+    - `Calories` (Integer)
+    - `Bmr` (Integer)
+    - `bmiId` (Relationship with BMI collection)
 
-** 4) Collection name: steps **
+4. **Collection name: steps**
 
-Attributes: steps(Integer), distance(Integer, min - 0 , max - 10000), caloriesBurnt(Integer, min - 0 , max - 10000), date(Datetime), userId(string)
+    Attributes: 
+    - `steps` (Integer)
+    - `distance` (Integer, min = 0, max = 10000)
+    - `caloriesBurnt` (Integer, min = 0, max = 10000)
+    - `date` (Datetime)
+    - `userId` (string)
 
-** 5) Collection name: formExercises **
+5. **Collection name: formExercises**
 
-Attributes: frontPushups(Integer),sidePushups(Integer),frontSquats(Integer),sideSquats(Integer),frontLunges(Integer),sideLunges(Integer),frontPlank(Integer),sidePlank(Integer),balanceOnLeftLeg(Integer),balanceOnRightLeg(Integer),date(Datetime),userId(String)
+    Attributes: 
+    - `frontPushups` (Integer)
+    - `sidePushups` (Integer)
+    - `frontSquats` (Integer)
+    - `sideSquats` (Integer)
+    - `frontLunges` (Integer)
+    - `sideLunges` (Integer)
+    - `frontPlank` (Integer)
+    - `sidePlank` (Integer)
+    - `balanceOnLeftLeg` (Integer)
+    - `balanceOnRightLeg` (Integer)
+    - `date` (Datetime)
+    - `userId` (string)
 
 
 ## <a name="links">🔗 Links</a>
