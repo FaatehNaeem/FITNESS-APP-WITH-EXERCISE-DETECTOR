@@ -4,7 +4,14 @@
   <br />
 </div>
 
-  <div>
+<div align="center">
+  <br />
+  <img src="https://i.postimg.cc/qqpQcp75/VID-20240808165840-ezgif-com-video-to-gif-converter.gif" alt="GIF Demo" width="320" height="240">
+  <br />
+</div>
+
+
+<div align="center">
     <img src="https://img.shields.io/badge/-React_Native-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
     <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="appwrite" />
     <img src="https://img.shields.io/badge/StyledComponents-black?style=for-the-badge&logo=styled-components&logoColor=black&color=pink" alt="styledComponents" />
