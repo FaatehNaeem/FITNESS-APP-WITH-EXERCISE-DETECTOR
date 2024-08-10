@@ -6,7 +6,7 @@
 
 <div align="center">
   <br />
-  <img src="https://drive.google.com/uc?export=view&id=1GLODcJGmnTpUJZUZulNs2k6CduXEsZ1I" alt="GIF Demo" width="320" height="240">
+  <img src="https://drive.google.com/file/d/1GLODcJGmnTpUJZUZulNs2k6CduXEsZ1I/view?usp=drive_link" alt="GIF Demo" width="320" height="240">
   <br />
 </div>
 
