@@ -2,8 +2,15 @@
   <br />
   <img src="https://github.com/user-attachments/assets/f112ec4f-83ce-4e26-991e-81551842e07c" alt="FitFlow" border="0">
   <br />
-
+  
+<div align="center">
+  <br />
+<video width="320" height="240" controls>
+  <source src="https://drive.google.com/file/d/19p_6nbvojG2fJjmGKaWrRAG-JjSDHevH/view?usp=drive_link" type="video/mp4">
+  <source src="https://drive.google.com/file/d/17dP3FHRrwRM7jnv1bNonFOduDJVW4Q4D/view?usp=drive_link" type="video/ogg">
+</video>  <br />
   <div>
+    
     <img src="https://img.shields.io/badge/-React_Native-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
     <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="appwrite" />
     <img src="https://img.shields.io/badge/StyledComponents-black?style=for-the-badge&logo=styled-components&logoColor=black&color=pink" alt="styledComponents" />
