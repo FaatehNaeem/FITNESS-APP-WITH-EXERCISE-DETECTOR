@@ -4,18 +4,6 @@
   <br />
 </div>
 
-<div align="center">
-  <br />
-  <img src="https://drive.google.com/file/d/1GLODcJGmnTpUJZUZulNs2k6CduXEsZ1I/view?usp=drive_link" alt="GIF Demo" width="320" height="240">
-  <br />
-</div>
-
-
-<div align="center">
-  <br />
-<img src="https://drive.google.com/uc?export=view&id=1-zpwzYREny0t7e5_i7QMuWYx3N0oRPZU" alt="GIF Demo" width="320" height="240">
-  <br />
-  
   <div>
     <img src="https://img.shields.io/badge/-React_Native-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
     <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="appwrite" />
