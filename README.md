@@ -2,14 +2,23 @@
   <br />
   <img src="https://github.com/user-attachments/assets/f112ec4f-83ce-4e26-991e-81551842e07c" alt="FitFlow" border="0">
   <br />
-  </div>
-    
+</div>
+
+<div align="center">
+  <br />
+  <video width="320" height="240" controls>
+    <source src="https://www.example.com/path/to/your/video.mp4" type="video/mp4">
+    <source src="https://www.example.com/path/to/your/video.ogg" type="video/ogg">
+  </video>
+  <br />
+  <div>
     <img src="https://img.shields.io/badge/-React_Native-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
     <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="appwrite" />
     <img src="https://img.shields.io/badge/StyledComponents-black?style=for-the-badge&logo=styled-components&logoColor=black&color=pink" alt="styledComponents" />
-    <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" alt="styledComponents" alt="Expo"/>
-    <img src="https://img.shields.io/badge/Expo%20Go-000020?style=for-the-badge&logo=expo&logoColor=white" alt="styledComponents" alt="ExpoGO"/>
-
+    <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" alt="Expo"/>
+    <img src="https://img.shields.io/badge/Expo%20Go-000020?style=for-the-badge&logo=expo&logoColor=white" alt="ExpoGO"/>
+  </div>
+</div>
   <h3 align="center">Fit Flow - Fitness App</h3>
 
    <div align="center">
