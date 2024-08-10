@@ -6,12 +6,16 @@
 
 <div align="center">
   <br />
-  <video width="320" height="240" controls>
-    <source src="https://drive.google.com/uc?export=view&id=1GLODcJGmnTpUJZUZulNs2k6CduXEsZ1I
-" type="video/mp4">
-    <source src="https://www.example.com/path/to/your/video.ogg" type="video/ogg">
-  </video>
+  <img src="https://drive.google.com/uc?export=view&id=1GLODcJGmnTpUJZUZulNs2k6CduXEsZ1I" alt="GIF Demo" width="320" height="240">
   <br />
+</div>
+
+
+<div align="center">
+  <br />
+<img src="https://drive.google.com/uc?export=view&id=1-zpwzYREny0t7e5_i7QMuWYx3N0oRPZU" alt="GIF Demo" width="320" height="240">
+  <br />
+  
   <div>
     <img src="https://img.shields.io/badge/-React_Native-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
     <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="appwrite" />
